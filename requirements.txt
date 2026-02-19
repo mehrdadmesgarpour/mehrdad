@@ -1,0 +1,10 @@
+streamlit==1.40.1
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-chroma==0.1.4
+langchain-huggingface==0.1.2
+chromadb==0.5.18
+pypdf==5.1.0
+sentence-transformers==3.3.1
+openai==1.54.4
+pytest==8.3.3
