@@ -1,0 +1,2 @@
+# Bundles the pandoc binary, so no system pandoc install is needed.
+pypandoc-binary>=1.13

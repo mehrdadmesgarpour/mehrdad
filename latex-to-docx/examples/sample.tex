@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{Demo: \LaTeX{} to Word Conversion}
+\author{Example Author}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This document demonstrates converting \LaTeX{} source --- \textbf{text},
+\emph{equations}, and images --- into a Microsoft Word (\texttt{.docx})
+file. Inline math such as $E = mc^2$ or $\nu = \mu/\rho$ becomes a
+native, editable Word equation rather than a picture.
+
+\section{Equations}
+The continuity equation for incompressible flow:
+\begin{equation}
+  \nabla \cdot \mathbf{u} = 0
+  \label{eq:continuity}
+\end{equation}
+
+The Navier--Stokes momentum equation:
+\begin{equation}
+  \rho\left(\frac{\partial \mathbf{u}}{\partial t}
+    + \mathbf{u}\cdot\nabla\mathbf{u}\right)
+  = -\nabla p + \mu\nabla^{2}\mathbf{u} + \rho\mathbf{g}
+\end{equation}
+
+Aligned equations also work:
+\begin{align}
+  \int_{0}^{\infty} e^{-x^{2}}\,dx &= \frac{\sqrt{\pi}}{2} \\
+  \sum_{n=1}^{\infty} \frac{1}{n^{2}} &= \frac{\pi^{2}}{6}
+\end{align}
+
+\section{An Image}
+Figure~\ref{fig:demo} is found on disk and embedded directly into the
+Word file, with its caption.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figure.png}
+  \caption{A damped oscillation, included with
+    \texttt{\textbackslash includegraphics}.}
+  \label{fig:demo}
+\end{figure}
+
+\section{Lists and Tables}
+\begin{itemize}
+  \item Sections, cross-references, and text formatting
+  \item Native Word (OMML) equations
+  \item Embedded images with captions
+\end{itemize}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Quantity  & Symbol & Unit \\
+    \midrule
+    Density   & $\rho$ & kg\,m$^{-3}$ \\
+    Viscosity & $\mu$  & Pa\,s \\
+    Velocity  & $\mathbf{u}$ & m\,s$^{-1}$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Nomenclature.}
+\end{table}
+
+\end{document}
